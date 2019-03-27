@@ -33,7 +33,7 @@ void Module::main(std::string path) {
 
 //**************************************************************************************************************************************
 
-void Module::attempt_task() {
+std::vector<std::vector<std::string>> Module::attempt_task() {
 	//////////////////---Przygotowanie zmiennych---//////////////////
 	std::string const _baseTaskPath{ "sifExplainer\\baseAttemptTask\\persh7251.p" };
 	std::string const _separator{ "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" };
@@ -76,11 +76,33 @@ void Module::attempt_task() {
 				}
 
 
-				separatorBar.push_back("            " + moduleBase.name);						//! Wstawianie b³êdów z pliku ph
-				separatorBar.push_back("      " + moduleBase.source);						//! Wstawianie b³êdów z pliku ph
-				errorsVector.push_back(separatorBar);											//! do vectora z b³êdami
-				separatorBar.pop_back();														//! wraz z nag³ówkiem
-				separatorBar.pop_back();														//! wraz z nag³ówkiem
+				separatorBar.push_back("            " + moduleBase.name);								//! Wstawianie b³êdów z pliku ph
+				separatorBar.push_back("      " + moduleBase.source);									//! Wstawianie b³êdów z pliku ph
+				errorsVector.push_back(separatorBar);													//! do vectora z b³êdami
+				separatorBar.pop_back();																//! wraz z nag³ówkiem
+				separatorBar.pop_back();																//! wraz z nag³ówkiem
+				errorsVector.push_back(Register::attempt_task(moduleBase, moduleCompared));
+
+
+				break;
+			} else if (moduleBase.baseAddress == moduleCompared.baseAddress) {
+				if (moduleBase.name != moduleCompared.name) {											//! Porównanie nazw
+					pFileErrors.push_back("Module <<" + moduleCompared.name + ">> have wrong name.");
+				}
+				if (moduleBase.memoryClass != moduleCompared.memoryClass) {								//! Porównanie klase pamiêci
+					pFileErrors.push_back("Module <<" + moduleCompared.name + ">> have wrong memory class.\n\t\t\t"
+						+ moduleCompared.memoryClass + " -> " + moduleBase.memoryClass);
+				}
+				if (moduleBase.parameters != moduleCompared.parameters) {								//! Porównanie oarametrów
+					pFileErrors.push_back("Module <<" + moduleCompared.name + ">> have wrong parameters.");
+				}
+
+
+				separatorBar.push_back("            " + moduleBase.name);								//! Wstawianie b³êdów z pliku ph
+				separatorBar.push_back("      " + moduleBase.source);									//! Wstawianie b³êdów z pliku ph
+				errorsVector.push_back(separatorBar);													//! do vectora z b³êdami
+				separatorBar.pop_back();																//! wraz z nag³ówkiem
+				separatorBar.pop_back();																//! wraz z nag³ówkiem
 				errorsVector.push_back(Register::attempt_task(moduleBase, moduleCompared));
 
 
@@ -93,7 +115,7 @@ void Module::attempt_task() {
 
 	errorsVector[1] = pFileErrors;
 
-	File::makeFile("errors.txt", errorsVector);
+	return errorsVector;
 }
 
 //**************************************************************************************************************************************

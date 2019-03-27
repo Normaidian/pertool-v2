@@ -1,1 +1,364 @@
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++            *.p fileWrong number of modules.Missing module INTC (Interrupt Controller)Missing module DMAC (Direct Memory Access Controller)Module <<WDT (Watchdog Timer)>> have wrong base address.Missing module SCI (Serial Communication Interface) - Channel AMissing module SCI (Serial Communication Interface) - Channel BMissing module SCI (Serial Communication Interface) - Channel CMissing module SCI (Serial Communication Interface) - Channel DMissing module SCI (Serial Communication Interface) - Channel EMissing module ADC (A/D Converter) - Unit AMissing module ADC (A/D Converter) - Unit B+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++            WDT (Watchdog Timer)Register <<WTCR*>> have a another address.Register <<WTCR*>> have a another address.Register <<WTCNT>> have a another address.Register <<WTSR*>> have a another address.Register <<WTSR*>> have a another address.Register <<WRCR>> have a another address.+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++            CMT (Compare Match Timer)Missing register CMCRMissing register CMSRMissing register CMCNTMissing register CMCORMissing register CMCRMissing register CMSRMissing register CMCNTMissing register CMCOR+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++            I/O PortsWrong numbers of registers in file :  E:\per_szn\attempt_tasks\MIC\sh7251/ioports.phMissing register PADRMissing register PAPRMissing register PBDRMissing register PBPRMissing register PBIRMissing register PBDSRMissing register PBPSRMissing register PCDRMissing register PCPRRegister <<PDDR>> have a another offset.Register <<PDPR>> have a another offset.Register <<PDIR>> have a another offset.Register <<PEDR>> have a another offset.Register <<PEPR>> have a another offset.Register <<PEIR>> have a another offset.Register <<PEDSR>> have a another offset.Register <<PFDR>> have a another offset.Register <<PFPR>> have a another offset.Register <<PFIR>> have a another offset.Register <<PFDSR>> have a another offset.Missing register PFPSRRegister <<PGDR>> have a another offset.Register <<PGPR>> have a another offset.Register <<PGIR>> have a another offset.Missing register PGDSRRegister <<PGER>> have a another offset.Register <<PHDR>> have a another offset.Register <<PHPR>> have a another offset.Register <<PJDR>> have a another offset.Register <<PJPR>> have a another offset.Register <<PJIR>> have a another offset.Register <<PJDSR>> have a another offset.Register <<PJPSR>> have a another offset.Register <<PKDR>> have a another offset.Register <<PKPR>> have a another offset.Register <<PKIR>> have a another offset.Register <<PKDSR>> have a another offset.Register <<PKPSR>> have a another offset.Register <<PLDR>> have a another offset.Register <<PLPR>> have a another offset.Register <<PLIR>> have a another offset.Missing register CKCR
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            *.p file
+
+Wrong number of modules.
+Module <<INTC (Input/Output Pins)>> have wrong name.
+Module <<INTC (Input/Output Pins)>> have wrong parameters.
+Module <<CMT (Compare Match Timer)>> have wrong parameters.
+Missing module SCI (Serial Communication Interface) - Channel A
+Missing module SCI (Serial Communication Interface) - Channel B
+Missing module SCI (Serial Communication Interface) - Channel C
+Missing module SCI (Serial Communication Interface) - Channel D
+Missing module SCI (Serial Communication Interface) - Channel E
+Missing module ADC (A/D Converter) - Unit A
+Module <<ADC (A/D Converter)>> have wrong name.
+Module <<ADC (A/D Converter)>> have wrong parameters.
+Module <<I/O Ports (I/O Ports)>> have wrong name.
+Module <<I/O Ports (I/O Ports)>> have wrong parameters.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            INTC (Interrupt Controller)
+      E:\sifExplainer\baseAttemptTask\sh7251/intc.ph
+
+Wrong numbers of registers in file :  E:\per_szn\attempt_tasks\PAM\sh7251/intc.ph
+Register <<IPR01>> have a another offset.
+		4294838296 -> 24
+Missing register IPR02 on offset 26
+Register <<IPR03>> have a another offset.
+		4294839296 -> 1024
+Register <<IPR04>> have a another offset.
+		4294839298 -> 1026
+Register <<IPR05>> have a another offset.
+		4294839300 -> 1028
+Register <<IPR06>> have a another offset.
+		4294839302 -> 1030
+Register <<IPR07>> have a another offset.
+		4294839304 -> 1032
+Register <<IPR08>> have a another offset.
+		4294839306 -> 1034
+Register <<IPR09>> have a another offset.
+		4294839308 -> 1036
+Register <<IPR10>> have a another offset.
+		4294839310 -> 1038
+Register <<IPR11>> have a another offset.
+		4294839312 -> 1040
+Register <<IPR12>> have a another offset.
+		4294839314 -> 1042
+Missing register IPR13 on offset 1044
+Register <<IPR14>> have a another offset.
+		4294839318 -> 1046
+Register <<IPR15>> have a another offset.
+		4294839320 -> 1048
+Register <<IPR16>> have a another offset.
+		4294839322 -> 1050
+Register <<IPR17>> have a another offset.
+		4294839324 -> 1052
+Register <<IPR18>> have a another offset.
+		4294839326 -> 1054
+Register <<IPR19>> have a another offset.
+		4294839328 -> 1056
+Register <<IPR20>> have a another offset.
+		4294839330 -> 1058
+Register <<IPR21>> have a another offset.
+		4294839332 -> 1060
+Register <<IPR22>> have a another offset.
+		4294839334 -> 1062
+Register <<IPR23>> have a another offset.
+		4294839336 -> 1064
+Register <<IPR24>> have a another offset.
+		4294839338 -> 1066
+Register <<IPR25>> have a another offset.
+		4294841388 -> 1068
+Register <<IPR26>> have a another offset.
+		4294839342 -> 1070
+Register <<IPR27>> have a another offset.
+		4294839344 -> 1072
+Register <<IPR28>> have a another offset.
+		4294839346 -> 1074
+Register <<IPR29>> have a another offset.
+		4294839348 -> 1076
+Register <<ICR0>> have a another offset.
+		4294838272 -> 0
+Register <<ICR1>> have a another offset.
+		4294838274 -> 2
+Register <<IRQRR>> have a another offset.
+		4294838278 -> 6
+Register <<IBCR>> have a another offset.
+		4294838284 -> 12
+Register <<IBNR>> have a another offset.
+		4294838286 -> 14
+Register <<SINTR1>> have a another offset.
+		4294838288 -> 16
+Register <<SINTR2>> have a another offset.
+		4294838289 -> 17
+Register <<SINTR3>> have a another offset.
+		4294838290 -> 18
+Register <<SINTR4>> have a another offset.
+		4294838291 -> 19
+Register <<SINTR5>> have a another offset.
+		4294838292 -> 20
+Register <<SINTR6>> have a another offset.
+		4294838293 -> 21
+Register <<SINTR7>> have a another offset.
+		4294838294 -> 22
+Register <<SINTR8>> have a another offset.
+		4294838295 -> 23
+Register <<SINTR9>> have a another offset.
+		4294838312 -> 40
+Register <<SINTR10>> have a another offset.
+		4294838313 -> 41
+Register <<SINTR11>> have a another offset.
+		4294838314 -> 42
+Register <<SINTR12>> have a another offset.
+		4294838315 -> 43
+Register <<SINTR13>> have a another offset.
+		4294838316 -> 44
+Register <<SINTR14>> have a another offset.
+		4294838317 -> 45
+Register <<SINTR15>> have a another offset.
+		4294838318 -> 46
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            DMAC (Direct Memory Access Controller)
+      E:\sifExplainer\baseAttemptTask\sh7251/dmac.ph
+
+Register <<DMACTR0>> have a another name.
+		DMACTR0 -> DMATCR0
+Register <<CHCR0*>> have a another name.
+		CHCR0* -> CHCR0
+Register <<DMACTR1>> have a another name.
+		DMACTR1 -> DMATCR1
+Register <<CHCR1*>> have a another name.
+		CHCR1* -> CHCR1
+Register <<DMACTR2>> have a another name.
+		DMACTR2 -> DMATCR2
+Register <<CHCR2*>> have a another name.
+		CHCR2* -> CHCR2
+Register <<DMACTR3>> have a another name.
+		DMACTR3 -> DMATCR3
+Register <<CHCR3*>> have a another name.
+		CHCR3* -> CHCR3
+Register <<DMACTR4>> have a another name.
+		DMACTR4 -> DMATCR4
+Register <<CHCR4*>> have a another name.
+		CHCR4* -> CHCR4
+Register <<DMACTR5>> have a another name.
+		DMACTR5 -> DMATCR5
+Register <<CHCR5*>> have a another name.
+		CHCR5* -> CHCR5
+Register <<DMACTR6>> have a another name.
+		DMACTR6 -> DMATCR6
+Register <<CHCR6*>> have a another name.
+		CHCR6* -> CHCR6
+Register <<DMACTR7>> have a another name.
+		DMACTR7 -> DMATCR7
+Register <<CHCR7*>> have a another name.
+		CHCR7* -> CHCR7
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            WDT (Watchdog Timer)
+      E:\sifExplainer\baseAttemptTask\sh7251/wdt.ph
+
+Register <<WTCNT>> have a another size.
+		word. -> word 
+Register <<WTSR*>> have a another size.
+		word. -> word 
+Register <<WTSR*>> have a another size.
+		word. -> word 
+Register <<WRCR>> have a another size.
+		word. -> word 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            CMT (Compare Match Timer)
+      E:\sifExplainer\baseAttemptTask\sh7251/cmt.ph
+
+Register <<CMCR_0>> have a another name.
+		CMCR_0 -> CMCR
+Register <<CMSR_0>> have a another name.
+		CMSR_0 -> CMSR
+Register <<CMCNT_0>> have a another name.
+		CMCNT_0 -> CMCNT
+Register <<CMCOR_0>> have a another name.
+		CMCOR_0 -> CMCOR
+Register <<CMCR_1>> have a another name.
+		CMCR_1 -> CMCR
+Register <<CMSR_1>> have a another name.
+		CMSR_1 -> CMSR
+Register <<CMCNT_1>> have a another name.
+		CMCNT_1 -> CMCNT
+Register <<CMCOR_1>> have a another name.
+		CMCOR_1 -> CMCOR
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            ADC (A/D Converter) - Unit B
+      E:\sifExplainer\baseAttemptTask\sh7251/adc_b.ph
+
+Wrong numbers of registers in file :  E:\per_szn\attempt_tasks\PAM\sh7251/adc_b.ph
+Register <<ADR40*>> have a another offset.
+		4294961216 -> 64
+Register <<ADR40*>> have a another offset.
+		4294961216 -> 64
+Register <<ADR40*>> have a another offset.
+		4294961216 -> 64
+Register <<ADR41*>> have a another offset.
+		4294961218 -> 66
+Register <<ADR41*>> have a another offset.
+		4294961218 -> 66
+Register <<ADR41*>> have a another offset.
+		4294961218 -> 66
+Register <<ADR42*>> have a another offset.
+		4294961220 -> 68
+Register <<ADR42*>> have a another offset.
+		4294961220 -> 68
+Register <<ADR42*>> have a another offset.
+		4294961220 -> 68
+Register <<ADR43*>> have a another offset.
+		4294961222 -> 70
+Register <<ADR43*>> have a another offset.
+		4294961222 -> 70
+Register <<ADR43*>> have a another offset.
+		4294961222 -> 70
+Register <<ADR44*>> have a another offset.
+		4294961224 -> 72
+Register <<ADR44*>> have a another offset.
+		4294961224 -> 72
+Register <<ADR44*>> have a another offset.
+		4294961224 -> 72
+Register <<ADR45*>> have a another offset.
+		4294961226 -> 74
+Register <<ADR45*>> have a another offset.
+		4294961226 -> 74
+Register <<ADR45*>> have a another offset.
+		4294961226 -> 74
+Register <<ADR46*>> have a another offset.
+		4294961228 -> 76
+Register <<ADR46*>> have a another offset.
+		4294961228 -> 76
+Register <<ADR46*>> have a another offset.
+		4294961228 -> 76
+Register <<ADR47*>> have a another offset.
+		4294961230 -> 78
+Register <<ADR47*>> have a another offset.
+		4294961230 -> 78
+Register <<ADR47*>> have a another offset.
+		4294961230 -> 78
+Register <<ADR48*>> have a another offset.
+		4294961232 -> 80
+Missing register ADRD1* on offset 62
+Register <<ADR48*>> have a another offset.
+		4294961232 -> 80
+Missing register ADRD1* on offset 62
+Register <<ADCSR1>> have a another offset.
+		4294961152 -> 0
+Register <<ADCER1>> have a another offset.
+		4294961200 -> 48
+Register <<ADANS3>> have a another offset.
+		4294961184 -> 32
+Register <<ADREF1>> have a another offset.
+		4294961154 -> 2
+Register <<ADADS1>> have a another offset.
+		4294961180 -> 28
+Register <<ADADC1>> have a another offset.
+		4294961182 -> 30
+Register <<ADTRE1>> have a another offset.
+		4294961168 -> 16
+Register <<ADTRS1>> have a another offset.
+		4294961172 -> 20
+Register <<ADSTRG1>> have a another offset.
+		4294961174 -> 22
+Register <<ADTRF1>> have a another offset.
+		4294961170 -> 18
+Register <<ADTRD1>> have a another offset.
+		4294961176 -> 24
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            I/O Ports
+      E:\sifExplainer\baseAttemptTask\sh7251/iop.ph
+
+Register <<PADR>> have a another offset.
+		4294850562 -> 0
+Register <<PAPR>> have a another offset.
+		4294850590 -> 28
+Register <<PBDR>> have a another offset.
+		4294850690 -> 128
+Register <<PBPR>> have a another offset.
+		4294850718 -> 156
+Register <<PBIR>> have a another offset.
+		4294850712 -> 150
+Register <<PBDSR>> have a another offset.
+		4294850714 -> 152
+Register <<PBPSR>> have a another offset.
+		4294850716 -> 154
+Register <<PCDR>> have a another offset.
+		4294850818 -> 256
+Register <<PCPR>> have a another access.
+		Read/Write -> Read Only
+Register <<PCPR>> have a another offset.
+		4294850846 -> 284
+Register <<PDDR>> have a another offset.
+		4294952960 -> 102398
+Register <<PDPR>> have a another offset.
+		4294952962 -> 102400
+Register <<PDIR>> have a another offset.
+		4294952964 -> 102402
+Register <<PEDR>> have a another offset.
+		4294952976 -> 102414
+Register <<PEPR>> have a another offset.
+		4294952978 -> 102416
+Register <<PEIR>> have a another offset.
+		4294952980 -> 102418
+Register <<PEDSR>> have a another offset.
+		4294952982 -> 102420
+Register <<PFDR>> have a another offset.
+		4294952992 -> 102430
+Register <<PFPR>> have a another offset.
+		4294952994 -> 102432
+Register <<PFIR>> have a another offset.
+		4294952996 -> 102434
+Register <<PFDSR>> have a another offset.
+		4294952998 -> 102436
+Register <<PFPSR>> have a another offset.
+		4294953000 -> 102438
+Register <<PGDR>> have a another offset.
+		4294953008 -> 102446
+Register <<PGPR>> have a another offset.
+		4294953010 -> 102448
+Register <<PGIR>> have a another offset.
+		4294953012 -> 102450
+Register <<PGDSR>> have a another offset.
+		4294953014 -> 102452
+Register <<PGER>> have a another offset.
+		4294953016 -> 102454
+Register <<PHDR>> have a another offset.
+		4294953040 -> 102478
+Register <<PHPR>> have a another offset.
+		4294953042 -> 102480
+Register <<PJDR>> have a another offset.
+		4294953056 -> 102494
+Register <<PJPR>> have a another offset.
+		4294953058 -> 102496
+Register <<PJIR>> have a another offset.
+		4294953060 -> 102498
+Register <<PJDSR>> have a another offset.
+		4294953062 -> 102500
+Register <<PJPSR>> have a another offset.
+		4294953064 -> 102502
+Register <<PKDR>> have a another offset.
+		4294953088 -> 102526
+Register <<PKPR>> have a another offset.
+		4294953090 -> 102528
+Register <<PKIR>> have a another offset.
+		4294850692 -> 102530
+Register <<PKDSR>> have a another offset.
+		4294953094 -> 102532
+Register <<PKPSR>> have a another offset.
+		4294953096 -> 102534
+Register <<PLDR>> have a another offset.
+		4294953120 -> 102558
+Register <<PLPR>> have a another offset.
+		4294953122 -> 102560
+Register <<PLIR>> have a another offset.
+		4294953124 -> 102562
+Register <<CKCR>> have a another offset.
+		4294953124 -> 102686
+

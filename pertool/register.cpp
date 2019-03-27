@@ -152,26 +152,66 @@ std::vector<std::string> Register::attempt_task(Module baseModule, Module compar
 		for (auto registerCompared : registersComparedVector) {
 			if (registerBase.name == registerCompared.name) {
 				if (registerBase.access != registerCompared.access) {											    // Porównanie dostêpów
-					errorsVector.push_back("Register <<" + registerCompared.name + ">> have a another access."
+					errorsVector.push_back("Register <<" + registerCompared.name + ">> have a another access.\n\t\t"
 						+ registerCompared.access + " -> " + registerBase.access);
 				}
 				if (registerBase.address != registerCompared.address) {												// Porównanie adresów
 					if (registerBase.offset != registerCompared.offset) {											// Porównanie offsetów
-						errorsVector.push_back("Register <<" + registerCompared.name + ">> have a another offset.");
+						errorsVector.push_back("Register <<" + registerCompared.name + ">> have a another offset.\n\t\t"
+							+ std::to_string(registerCompared.offset) + " -> " + std::to_string(registerBase.offset));
 					}
 					else {																							// Wypisanie iformacji o b³êdnym adresie
-						errorsVector.push_back("Register <<" + registerCompared.name + ">> have a another address.");
+						errorsVector.push_back("Register <<" + registerCompared.name + ">> have a another address.\n\t\t"
+							+ std::to_string(registerCompared.address) + " -> " + std::to_string(registerBase.address));
 			
 					}
 				}
 				if (registerBase.size != registerCompared.size) {													// Porównanie wielkoœci rejestrów
-					errorsVector.push_back("Register <<" + registerCompared.name + ">> have a another sieze."
+					errorsVector.push_back("Register <<" + registerCompared.name + ">> have a another size.\n\t\t"
+						+ registerCompared.size + " -> " + registerBase.size);
+				}
+
+				break;
+			} else if (registerBase.offset == registerCompared.offset) {
+				if (registerBase.access != registerCompared.access) {											    // Porównanie dostêpów
+					errorsVector.push_back("Register <<" + registerCompared.name + ">> have a another access.\n\t\t"
+						+ registerCompared.access + " -> " + registerBase.access);
+				}
+				if (registerBase.address != registerCompared.address) {												// Porównanie adresów																							// Wypisanie iformacji o b³êdnym adresie
+					errorsVector.push_back("Register <<" + registerCompared.name + ">> have a another address.\n\t\t"
+						+ std::to_string(registerCompared.address) + " -> " + std::to_string(registerBase.address));
+				}
+				if (registerBase.name != registerCompared.name) {													// Porównanie nazw																							// Wypisanie iformacji o b³êdnym adresie
+					errorsVector.push_back("Register <<" + registerCompared.name + ">> have a another name.\n\t\t"
+						+ registerCompared.name + " -> " + registerBase.name);
+				}
+				if (registerBase.size != registerCompared.size) {													// Porównanie wielkoœci rejestrów
+					errorsVector.push_back("Register <<" + registerCompared.name + ">> have a another size.\n\t\t"
+						+ registerCompared.size + " -> " + registerBase.size);
+				}
+
+				break;
+			} else if (registerBase.address == registerCompared.address) {
+				if (registerBase.access != registerCompared.access) {											    // Porównanie dostêpów
+					errorsVector.push_back("Register <<" + registerCompared.name + ">> have a another access.\n\t\t"
+						+ registerCompared.access + " -> " + registerBase.access);
+				}
+				if (registerBase.offset != registerCompared.offset) {												// Porównanie ofsetów																							// Wypisanie iformacji o b³êdnym adresie
+					errorsVector.push_back("Register <<" + registerCompared.name + ">> have a another offset.\n\t\t"
+						+ std::to_string(registerCompared.offset) + " -> " + std::to_string(registerBase.offset));
+				}
+				if (registerBase.name != registerCompared.name) {													// Porównanie nazw																							// Wypisanie iformacji o b³êdnym adresie
+					errorsVector.push_back("Register <<" + registerCompared.name + ">> have a another name.\n\t\t"
+						+ registerCompared.name + " -> " + registerBase.name);
+				}
+				if (registerBase.size != registerCompared.size) {													// Porównanie wielkoœci rejestrów
+					errorsVector.push_back("Register <<" + registerCompared.name + ">> have a another size.\n\t\t"
 						+ registerCompared.size + " -> " + registerBase.size);
 				}
 
 				break;
 			} else if (registerCompared.name == registersComparedVector.back().name) {
-				errorsVector.push_back("Missing register " + registerBase.name);
+				errorsVector.push_back("Missing register " + registerBase.name + " on offset "  + std::to_string(registerBase.offset));
 			}
 		}
 	}

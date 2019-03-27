@@ -34,6 +34,6 @@ public:
 	};
 
 	static void main(std::string path="");
-	static void attempt_task();
+	static std::vector<std::vector<std::string>> attempt_task();
 };
 
